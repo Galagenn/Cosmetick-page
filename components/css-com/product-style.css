@@ -1,0 +1,194 @@
+/* Basic Styling */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+}
+
+.left-column {
+  display: flex;
+  justify-content: center;
+  width: 55%;
+  position: relative;
+}
+
+.right-column {
+  width: 45%;
+  margin-top: 10px;
+}
+
+.left-column img {
+  max-width: 500px;
+  max-height: 500px;
+  transition: all 0.3s ease;
+}
+
+.left-column img.active {
+  opacity: 1;
+}
+
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+
+.product-description span {
+  font-size: 12px;
+  color: #358ED7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.product-description h1 {
+  font-weight: 300;
+  font-size: 40px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+
+.product-description p {
+  font-size: 12px;
+  font-weight: 300;
+  color: #777777;
+  line-height: 24px;
+}
+
+.product-color {
+  margin-bottom: 30px;
+}
+
+.color-choose div {
+  display: inline-block;
+}
+
+.product-color {
+  margin-bottom: 30px;
+}
+
+.color-choose div {
+  display: inline-block;
+}
+
+.color-choose,
+.cable-choose {
+  margin-bottom: 20px;
+}
+
+.color-choose button,
+.cable-choose button {
+  border: 2px solid #E1E8EE;
+  border-radius: 6px;
+  padding: 13px 20px;
+  font-size: 14px;
+  color: #5E6977;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all .5s;
+  margin-top: 10px;
+}
+
+.color-choose button:hover,
+.color-choose button:active,
+.color-choose button:focus,
+.cable-choose button:hover,
+.cable-choose button:active,
+.cable-choose button:focus {
+  border: 2px solid #86939E;
+  outline: none;
+}
+
+.color-config,
+.cable-config {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+
+.color-config a,
+.cable-config a {
+  color: #358ED7;
+  text-decoration: none;
+  font-size: 12px;
+  position: relative;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.color-config a:before,
+.cable-config a:before {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid rgba(53, 142, 215, 0.5);
+  display: inline-block;
+  text-align: center;
+  line-height: 16px;
+  opacity: 0.5;
+  margin-right: 5px;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+}
+
+.product-price span {
+  font-size: 26px;
+  font-weight: 300;
+  color: #43474D;
+  margin-right: 20px;
+}
+
+.product-price span {
+  font-size: 26px;
+  font-weight: 300;
+  color: #43474D;
+  margin-right: 20px;
+}
+
+.cart-btn {
+  display: inline-block;
+  background-color: #7DC855;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 10px;
+  transition: all .5s;
+  margin-left: 10px;
+}
+
+.cart-btn:hover {
+  background-color: #c7a798;
+}
+
+@media (max-width: 940px) {
+  .container {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .left-column img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 535px) {
+  .left-column img {
+    width: 250px;
+  }
+}
